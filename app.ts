@@ -15,7 +15,6 @@ const limiter = rateLimit({
   max: 100 // limit each IP to 100 requests per windowMs
 });
 
-
 app.use(helmet());
 app.use(express.json());
 app.use(limiter);
